@@ -1,0 +1,6 @@
+.terraform.lock.hcl
+.terraform
+.terraformrc*
+!.terraformrc.sample
+*.tfvars
+!terraform.tfvars.sample

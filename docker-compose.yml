@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  terraform:
+    image: hashicorp/terraform:latest
+    volumes:
+      - .:/app
+      - .terraformrc:/root/.terraformmc
+    working_dir: /app
