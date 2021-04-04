@@ -1,20 +1,13 @@
-module "compute" {
-  source = "./modules/compute"
-}
-
 module "network" {
   source = "./modules/network"
-}
-
-module "storage" {
-  source = "./modules/storage"
 }
 
 module "iam" {
   source = "./modules/iam"
 }
 
-module "integration" {
-  source = "./modules/integration"
-}
+module "well-architected" {
+  source = "./modules/well-architected"
 
+  public_subnet_id = module.network.public_subnet_id
+}

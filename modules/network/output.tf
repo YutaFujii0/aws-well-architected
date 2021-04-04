@@ -1,4 +1,4 @@
 output "public_subnet_id" {
-  value       = aws_subnet.demo.id
-  sensitive   = false
+  value     = aws_subnet.demo.id
+  sensitive = false
 }
